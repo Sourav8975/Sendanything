@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send Anything Nearby</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 🔥 PRELOAD IMAGE -->
+<link rel="preload" as="image" href="https://i.ibb.co/8nbnjK6n/file-00000000e7f471fa98eb8ff6a776f51c.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#141e30,#243b55);
+  color:#fff;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* GLASS CARD */
+.container{
+  width:100%;
+  max-width:420px;
+  padding:40px 25px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(12px);
+  border-radius:28px;
+  box-shadow:0 25px 50px rgba(0,0,0,.45);
+  text-align:center;
+}
+
+/* IMAGE */
+.container img{
+  width:100%;
+  max-width:240px;
+  margin-bottom:20px;
+  user-select:none;
+  pointer-events:none;
+  -webkit-user-drag:none;
+}
+
+/* TEXT */
+h1{
+  font-size:1.9rem;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+p{
+  font-size:14px;
+  opacity:.9;
+}
+
+/* BUTTON */
+.button{
+  display:block;
+  margin:30px auto 0;
+  padding:15px;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  color:#fff;
+  border-radius:50px;
+  font-weight:600;
+  text-decoration:none;
+  font-size:16px;
+  transition:.3s;
+  box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+.button:hover{
+  transform:translateY(-3px);
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  justify-content:space-between;
+  margin-top:30px;
+  gap:12px;
+}
+
+.feature{
+  flex:1;
+  background:rgba(255,255,255,0.18);
+  padding:12px 8px;
+  border-radius:16px;
+  font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:420px){
+  h1{font-size:1.7rem;}
+}
+</style>
+</head>
+
+<body
+oncontextmenu="return false"
+ondragstart="return false"
+onselectstart="return false"
+>
+
+<div class="container">
+
+  <!-- IMAGE AUTO LOADED -->
+  <img 
+    src="https://i.ibb.co/8nbnjK6n/file-00000000e7f471fa98eb8ff6a776f51c.png"
+    alt="delivery">
+
+  <h1>Send Anything Nearby</h1>
+  <p>Food • Gifts • Documents • Personal Items</p>
+
+  <a class="button"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSeN9em_qG4THusuAexwqufLg9kfKRaJOPoy8MtqOXIK7Ps6dw/viewform"
+     target="_blank">
+     Place Delivery Order
+  </a>
+
+  <div class="features">
+    <div class="feature">📍 Nearby</div>
+    <div class="feature">⚡ Fast</div>
+    <div class="feature">📦 Safe</div>
+  </div>
+
+</div>
+
+</body>
+</html>
